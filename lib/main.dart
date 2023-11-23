@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'demo1.dart';
 import 'demo2.dart';
+import 'demo3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -61,6 +62,16 @@ class MyHomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute<void>(
                           builder: (BuildContext context) => const Demo2()));
+                }),
+            ListTile(
+                leading: const Icon(Icons.android_rounded),
+                iconColor: Colors.deepPurpleAccent,
+                title: const Text("demo3"),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute<void>(
+                          builder: (BuildContext context) => const Demo3()));
                 }),
           ],
         ),
